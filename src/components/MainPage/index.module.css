@@ -1,0 +1,81 @@
+.mainPage{
+   width: 100%;
+   background-color: #E7EFFF;
+}
+
+.mainHeader{
+    background-color: blue;
+    /* color: #1fc075; */
+    color: white;
+}
+
+.mainBody{
+    padding: 10px;
+}
+
+.mainFirst{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.mainSecond{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.mainThird{
+    display: grid;
+    grid-template-columns: 25% 30% 45%;
+}
+
+/* .cardSecond{
+    grid-column-start: 2;
+  grid-column-end: 4;
+} */
+
+.cardBody{
+    display: flex;
+}
+
+.card{
+    margin: 10px;
+    box-shadow: 0px 1px 4px 1px #B4CEFF;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 10px;
+}
+
+.card1{
+    height: 100%;
+}
+
+.areaChart{
+    width: 100%;
+    height: 100%;
+}
+
+.graph{
+    background: linear-gradient(180deg, #018E42 -0.38%, #F9F9F9 110.73%);
+background: linear-gradient(180deg, #018E42 -0.38%, #F9F9F9 110.73%);
+ 
+}
+
+@media (max-width: 500px){
+    .mainFirst{
+        /* display: grid; */
+        grid-template-columns: auto;
+        /* gap: 3px; */
+    }
+
+    .mainSecond{
+        /* display: grid; */
+        grid-template-columns: auto;
+    }
+
+    .mainThird{
+        /* display: grid; */
+        grid-template-columns: auto;
+    }
+}

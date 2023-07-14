@@ -1,0 +1,29 @@
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.menuItem{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 0px 5px 20px;
+}
+
+/* .dflex{
+   display: flex;
+} */
+
+.menuBar{
+    margin: 20px;
+}
+
+.background{
+    background-color: #0D62FF;
+}
+
+.sideMenu{
+    border-right: 2px solid lightskyblue;
+    height: 100%;
+}
