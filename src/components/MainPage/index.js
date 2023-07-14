@@ -13,9 +13,11 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
+//   Legend,
   ResponsiveContainer,
 } from "recharts";
+import frame1 from '../../images/Frame 19.jpg'
+import frame2 from '../../images/Frame 39.jpg'
 
 const MainPage = () => {
     const data = [
@@ -162,22 +164,18 @@ const MainPage = () => {
           <p>Following Is Your Organization’s Performance Summary</p>
         </div>
       </div>
-      {/* <div>
-        hello
-      <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={400} height={400}>
-          <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
-          <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={70} outerRadius={500} fill="#82ca9d" label />
-        </PieChart>
-      </ResponsiveContainer>
-      </div> */}
-
       <div className={styles.mainBody}>
         <div className={styles.mainFirst}>
           <div className={styles.card}>
             <div className={styles.cardHeading}>In Training Workers</div>
             <div className={styles.cardBody}>
-              <div>3354</div>
+              <div>
+                <h3>3354</h3>
+                <div style={{display:'flex'}}>
+                    <img src={frame1} width={60} height={30}/>
+                    <p>234</p>
+                </div>
+              </div>
               <div className={styles.areaChart}>
                 <ResponsiveContainer width="100%" aspect={1}>
                   <AreaChart
@@ -207,7 +205,13 @@ const MainPage = () => {
           <div className={styles.card}>
             <div className={styles.cardHeading}>Video Watch-Time(Hrs)</div>
             <div className={styles.cardBody}>
-              <div>5647</div>
+            <div>
+                <h3>2433</h3>
+                <div style={{display:'flex'}}>
+                    <img src={frame2} width={60} height={30}/>
+                    <p>435</p>
+                </div>
+              </div>
               <div className={styles.areaChart}>
                 <ResponsiveContainer width="100%" aspect={1}>
                   <AreaChart
@@ -237,7 +241,13 @@ const MainPage = () => {
           <div className={styles.card}>
             <div className={styles.cardHeading}>%Workers Passing Quiz</div>
             <div className={styles.cardBody}>
-              <div>5647</div>
+            <div>
+                <h3>95%</h3>
+                <div style={{display:'flex'}}>
+                    <img src={frame1} width={60} height={30}/>
+                    <p>24%</p>
+                </div>
+              </div>
               <div className={styles.areaChart}>
                 <ResponsiveContainer width="100%" aspect={1}>
                   <AreaChart
@@ -263,7 +273,13 @@ const MainPage = () => {
           <div className={styles.card}>
             <div className={styles.cardHeading}>Avg. Days Taken</div>
             <div className={styles.cardBody}>
-              <div>5647</div>
+            <div>
+                <h3>6</h3>
+                <div style={{display:'flex'}}>
+                    <img src={frame1} width={60} height={30}/>
+                    <p>3</p>
+                </div>
+              </div>
               <div className={styles.areaChart}>
                 <ResponsiveContainer width="100%" aspect={1}>
                   <AreaChart
@@ -292,7 +308,6 @@ const MainPage = () => {
             <div className={styles.card1}>
               <div className={styles.cardHeading}>Chapter Wise Status</div>
               <div className={styles.cardBody}>
-                <div>5647</div>
                 <div className={styles.areaChart}>
                   <ResponsiveContainer width="100%" aspect={1}>
                     <PieChart>
@@ -306,6 +321,7 @@ const MainPage = () => {
                         fill="#82ca9d"
                       />
                     </PieChart>
+                    {/* <Legend/> */}
                   </ResponsiveContainer>
                 </div>
               </div>
@@ -326,7 +342,7 @@ const MainPage = () => {
                         <YAxis />
                         <Tooltip />
                         {/* <Legend /> */}
-                        <Bar dataKey="Workers" fill="#8884d8" />
+                        <Bar dataKey="Workers" fill="#0D62FF" />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
@@ -344,19 +360,19 @@ const MainPage = () => {
               <p>16% more enrollees this month</p>
               <div className="">
                 <div>
-                    <h6>course a</h6>
+                    <h5 style={{paddingBottom:'0'}}>course a</h5>
                     <p>23 workers took this course this week</p>
                 </div>
                 <div>
-                    <h6>course b</h6>
+                    <h5>course b</h5>
                     <p>253 workers took this course this week</p>
                 </div>
                 <div>
-                    <h6>course c</h6>
+                    <h5>course c</h5>
                     <p>253 workers took this course this week</p>
                 </div>
                 <div>
-                    <h6>course d</h6>
+                    <h5>course d</h5>
                     <p>253 workers took this course this week</p>
                 </div>
               </div>
@@ -366,7 +382,6 @@ const MainPage = () => {
             <div className={styles.card}>
               <div className={styles.cardHeading}>Quiz Passing %</div>
               <div className={styles.cardBody}>
-                <div>5647</div>
                 <div className={styles.areaChart}>
                   <ResponsiveContainer width="100%" aspect={1}>
                     <PieChart>
@@ -398,8 +413,8 @@ const MainPage = () => {
                         <XAxis dataKey="day" />
                         <YAxis />
                         <Tooltip />
-                        <Legend />
-                        <Bar dataKey="training" fill="#8884d8" />
+                        {/* <Legend /> */}
+                        <Bar dataKey="training" fill="#0D62FF" />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
